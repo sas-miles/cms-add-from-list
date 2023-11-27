@@ -1,3 +1,36 @@
+# Webflow CMS Add Items from Fallback Collection List
+
+This project was created using Finsweet's dev starter framework. To learn more read documentation [Finsweet Developer Starter](#finsweet-developer-starter)
+
+This is a feature extension for Webflow. This feature was created to solve a UX pattern of recommending related posts at the bottom of entry pages. In some cases, a website might not have enough items within a category and will need to pull entries from the main collection, regardless of their category.
+
+This feature requires you to setup a fallback collection by doing the following:
+Set up your primary collection. This is the collection that will be displayed at the bottom of your entry page. Add your filters to display posts that are from the same category. Add another filter to ensure that the current entry is not included.
+
+Once you finish styling this section, duplicate the collection to create a fallback. Remove the category filter and keep the filter to make sure you don't display current item.
+
+You will need to add attributes to your elements to make sure this code work.
+
+In the primary collection **list** add the data attribute
+
+"data-primary-collection"
+
+In the primary collection **item** add the data attribute
+
+"data-item"
+
+Add these attributes in the name field in Webflow custom attributes setting.
+
+In the fallback collection add the data attribute
+
+"data-fallback-collection"
+
+In a div wrapping the collection
+
+In the fallback collection's item add the data attribute
+
+"data-item"
+
 # Finsweet Developer Starter
 
 A starter template for both Client & Power projects.
